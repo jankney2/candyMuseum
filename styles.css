@@ -90,3 +90,8 @@ span {
     background-color: hotpink;
     color:white;
 }
+
+.textHolder>* {
+    margin:5%;
+
+}
