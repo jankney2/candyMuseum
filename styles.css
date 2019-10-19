@@ -1,9 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 
 body {
+    box-sizing: border-box;
     background-color: pink;
     font-family: 'Noto Sans KR', sans-serif;
+    padding:0;
+    margin:0;
+}
 
+body a {
+text-decoration: none;
+color:inherit;
+}
+
+body a:visited {
+text-decoration: none;
+color:inherit;
+}
+
+nav {
+padding:1%;
+width:100%;
+position: fixed;
+top:0;
+transition: all .25s ease-in-out;
+}
+
+nav a {
+    margin:2%;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    color:white;
 }
 
 .container {
@@ -11,23 +41,37 @@ body {
     /* flex-direction: row; */
     /* justify-content: space-evenly; */
     align-items: center;
-    border: 1px solid #000;
-    margin-bottom: 5%;
+
+    margin: 3% 0;
 }
 
 .heroLeft  {
-    border: 1px solid green;
+
     width:50%;
     text-align: center;
     overflow: hidden;
 }
 .heroRight {
     width:50%;
-    border: 1px solid red;
+
     text-align: center;
     overflow: hidden;
 }
 
 .heroLeft .heroRight img {
     width:85%;
+}
+
+.container h2 {
+    text-transform: uppercase;
+}
+
+.textHolder {
+    width: 80%;
+    margin:auto;
+}
+
+.scrollNav {
+    background-color: black;
+    color:white;
 }
